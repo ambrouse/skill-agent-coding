@@ -1,12 +1,17 @@
 ---
 name: documentation-skill
-description: Documentation rules for this repository. Use when Codex writes, updates, cleans, summarizes, or organizes project docs under docs, including task summaries and technical notes.
-argument-hint: "documentation task"
+description: 'Những quy tắt bắt buộc khi viết doc cho dự án.'
+argument-hint: 'tuân thủ các quy tắc đã đề ra.'
 user-invocable: true
 ---
 
-# Documentation Skill
+# Những quy tắt bắt buộc khi viết doc cho dự án:
 
-Follow the preserved documentation rules at `../project-workflow/references/github-skills/documentation-skill/documentation-skill.md`.
+## Lưu trữ
+- Các file doc phải lưu vào folder docs ở project tổng
+- Nên chia filder ra cho nhiều loại docs
 
-Use those rules together with active system and developer instructions. If instructions conflict, follow higher-priority instructions first.
+## Format
+- Bạn có thể gộp các file liên quan vào 1 docs nhưng phải tóm tắt chỉ ghi lại những doc quan trọng.
+- Có thời gian rõ ràng.
+- Luôn quét lại hết các file doc và tóm tắt, clean, xóa, sửa nếu cần sau mỗi task.
