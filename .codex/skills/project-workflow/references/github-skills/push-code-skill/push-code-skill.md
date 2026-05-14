@@ -12,9 +12,9 @@ user-invocable: true
 - Phải đảm bảo có nhiều bài test nghiêm ngặt, chi tiết cho từng phần của dự án.
 - Phải đầy đủ chuẩn một production, tets nghiêm ngặt và có các bài tets gắt gao nhất.
 
-## Quy tắt push
-- Ghi commit rõ ràng có thời gian.
-- Có decription rõ ràng chi tiết.
+## Quy tắt viết readme.
+- Dùng skill readme-style để viết readme
+- Nếu chưa có ảnh banner thì ưu tiên chụp ảnh frontend không thì tự tạo.
 
 ## Setup
 - Setup gitignore, .env, .env.example nếu chưa có.

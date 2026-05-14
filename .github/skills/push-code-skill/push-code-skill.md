@@ -21,8 +21,8 @@ user-invocable: true
 - Tạo CI/CD khời đầu nếu chưa có.
 
 ## Quy tắt viết readme.
-- Chuẩn các repo lớn có link framework, có thiết kế title và decription rõ ràng làm banner chuẩn chỉ.
-- Thiết kế rõ ràng chuyên nghiệp nhưng không quá phức tạp và phải đầy đủ mọi thứ về dựa án, có doc, log.
+- Dùng skill readme-style để viết readme
+- Nếu chưa có ảnh banner thì ưu tiên chụp ảnh frontend không thì tự tạo.
 
 ## Quản lý version dự án rõ ràng.
 - Quản lý version rõ ràng chuyên nghiệp..

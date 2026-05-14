@@ -1,0 +1,20 @@
+<svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="420" fill="#111827"/>
+  <rect x="64" y="58" width="1152" height="304" rx="28" fill="#F8FAFC"/>
+  <rect x="96" y="94" width="360" height="232" rx="18" fill="#0F172A"/>
+  <rect x="124" y="126" width="108" height="14" rx="7" fill="#38BDF8"/>
+  <rect x="124" y="166" width="252" height="12" rx="6" fill="#CBD5E1"/>
+  <rect x="124" y="198" width="210" height="12" rx="6" fill="#CBD5E1"/>
+  <rect x="124" y="230" width="278" height="12" rx="6" fill="#CBD5E1"/>
+  <rect x="124" y="274" width="148" height="16" rx="8" fill="#34D399"/>
+  <path d="M546 155H760" stroke="#111827" stroke-width="16" stroke-linecap="round"/>
+  <path d="M546 207H1020" stroke="#475569" stroke-width="14" stroke-linecap="round"/>
+  <path d="M546 254H920" stroke="#64748B" stroke-width="14" stroke-linecap="round"/>
+  <rect x="546" y="294" width="132" height="34" rx="17" fill="#2563EB"/>
+  <rect x="696" y="294" width="132" height="34" rx="17" fill="#059669"/>
+  <rect x="846" y="294" width="132" height="34" rx="17" fill="#DC2626"/>
+  <text x="546" y="132" fill="#111827" font-family="Arial, sans-serif" font-size="34" font-weight="700">Skill Agent Coding</text>
+  <text x="610" y="317" fill="white" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">Codex</text>
+  <text x="762" y="317" fill="white" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">GitHub</text>
+  <text x="912" y="317" fill="white" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">CI</text>
+</svg>

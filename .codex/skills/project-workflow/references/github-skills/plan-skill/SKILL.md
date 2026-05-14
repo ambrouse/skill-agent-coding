@@ -1,7 +1,7 @@
 ---
 name: plan-skill
 description: 'Những quy tắt bắt buộc khi lập kế hoạch dự án.'
-argument-hint: tuân thủ các quy tắc đã đề ra.'
+argument-hint: 'tuân thủ các quy tắc đã đề ra.'
 user-invocable: true
 ---
 
@@ -32,4 +32,3 @@ user-invocable: true
 
 
 
-  
