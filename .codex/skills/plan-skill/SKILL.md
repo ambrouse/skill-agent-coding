@@ -16,7 +16,7 @@ user-invocable: true
      - thời gian dự kiến cho mỗi bước.
      - các tài nguyên cần thiết (nếu có).
 
-  3. Phải có mô tả chi tiết plan đó cần các skill nào để thực hiện, và nếu có thể hãy gợi ý các skill cần thiết để hoàn thành task đó, hiện tại ta sẽ có các skill sau: backend-skill, frontend-skill, testing-skill, documentation-skill, logging-skill.
+  3. Phải có mô tả chi tiết plan đó cần các skill nào để thực hiện, và nếu có thể hãy gợi ý các skill cần thiết để hoàn thành task đó, hiện tại ta sẽ có các skill sau: backend-skill, frontend-skill, testing-skill, documentation-skill, logging-skill, security-skill, push-code-skill.
 
   4. Khi code theo plan phải tuẩn thủ đúng theo quy trình sau:
   - Với mỗi phase của plan phải đi theo quy trình: đọc skill cần thiết, thực hiện phase đó, testing phase đó, ghi lại documentation cho phase đó, logging lại quá trình thực hiện phase đó, phải đảm bảo rằng phase đó đã pass theo đúng testing-skill thì mới tiếp tục.
