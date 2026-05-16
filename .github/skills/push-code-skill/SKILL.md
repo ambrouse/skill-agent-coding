@@ -21,8 +21,8 @@ user-invocable: true
 - Tạo CI/CD khời đầu nếu chưa có.
 
 ## Quy tắt viết readme.
-- Dùng skill readme-style để viết readme
-- Nếu chưa có ảnh banner thì ưu tiên chụp ảnh frontend không thì tự tạo.
+- Dùng skill /readme-style để viết readme
+- Nếu chưa có ảnh banner thì ưu tiên chụp ảnh frontend nếu frontend đang bật sẵn nếu mất thời gian quá thì tự tạo một ảnh demo đơn giản.
 
 ## Quản lý version dự án rõ ràng.
 - Quản lý version rõ ràng chuyên nghiệp..

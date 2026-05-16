@@ -7,6 +7,9 @@ user-invocable: true
 # Frontend Skill
 Những quy tắt bắt buộc khi viết code frontend:
 
+## Skill phụ trợ
+- Sử dụng skill /frontend-design-skills để thiết kế giao diện, không tự thiết kế.
+
 ## Cấu trúc thư mục
 - `src/`: Chứa mã nguồn chính của ứng dụng.
   - `components/`: Chứa các thành phần giao diện người dùng (UI components).
