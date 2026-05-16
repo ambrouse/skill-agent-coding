@@ -1,42 +1,31 @@
----
+﻿---
 name: plan-skill
-description: Quy tắc bắt buộc khi Claude Code lập kế hoạch cho task coding, chia phase, xác định skill cần dùng, testing, documentation, logging và quy trình hoàn thành.
-argument-hint: "planning task"
+description: 'Những quy tắt bắt buộc khi lập kế hoạch dự án.'
+argument-hint: 'tuân thủ các quy tắc đã đề ra.'
 user-invocable: true
 ---
 
-# Plan Skill
+# Với mỗi task được giao, hãy tuân thủ các quy tắc sau:
+- luôn tuân theo quy trình code sau:
 
-Với mỗi task coding đủ phức tạp, Claude Code phải tuân thủ quy trình sau.
+  1. lên một file plan rõ ràng và chi tiết vào folder `plans` với tên file là `plan-{task_name}.md`
 
-## Quy trình lập kế hoạch
+  2. trong file plan, hãy mô tả chi tiết các bước cần thực hiện để hoàn thành task, bao gồm:
+     - mục tiêu của task.
+     - các bước cụ thể cần thực hiện.
+     - thời gian dự kiến cho mỗi bước.
+     - các tài nguyên cần thiết (nếu có).
 
-1. Lập plan rõ ràng trước khi code khi task có nhiều bước, ảnh hưởng nhiều file hoặc có nhiều cách triển khai.
-2. Nếu user yêu cầu lưu plan thành file, tạo file trong folder `plans` với tên `plan-{task_name}.md`.
-3. Trong plan phải mô tả:
-   - Mục tiêu task.
-   - Các phase hoặc bước cụ thể cần thực hiện.
-   - Thời gian dự kiến cho mỗi bước nếu user yêu cầu.
-   - Tài nguyên cần thiết nếu có.
-   - File hoặc khu vực code dự kiến bị ảnh hưởng nếu đã biết.
-4. Plan phải xác định skill cần dùng, ví dụ: `backend-skill`, `frontend-skill`, `testing-skill`, `documentation-skill`, `logging-skill`, `push-code-skill`, `readme-style`.
-5. Nếu task chưa rõ, phải hỏi lại trước khi bắt đầu để tránh làm sai quy trình hoặc bỏ qua bước quan trọng.
+  3. Phải có mô tả chi tiết plan đó cần các skill nào để thực hiện, và nếu có thể hãy gợi ý các skill cần thiết để hoàn thành task đó, hiện tại ta sẽ có các skill sau: backend-skill, frontend-skill, testing-skill, documentation-skill, logging-skill.
 
-## Quy trình thực hiện theo phase
+  4. Khi code theo plan phải tuẩn thủ đúng theo quy trình sau:
+  - Với mỗi phase của plan phải đi theo quy trình: đọc skill cần thiết, thực hiện phase đó, testing phase đó, ghi lại documentation cho phase đó, logging lại quá trình thực hiện phase đó, phải đảm bảo rằng phase đó đã pass theo đúng testing-skill thì mới tiếp tục.
+  - Phải làm lần lượt hết tất cả các phase cho đến khi hoàn thành task, không được bỏ qua bất kỳ phase nào thì mới được coi là hoàn thành task đó.
 
-Với mỗi phase:
+  5. Nếu có bất kỳ thắc mắc nào về task hoặc quy trình, hãy hỏi ngay để được giải đáp trước khi bắt đầu thực hiện task, tránh việc làm sai quy trình hoặc bỏ qua các bước quan trọng.
 
-1. Đọc hoặc áp dụng skill cần thiết.
-2. Thực hiện phase đó.
-3. Test hoặc verify phase đó bằng command hoặc kiểm tra phù hợp.
-4. Cập nhật documentation nếu task yêu cầu hoặc thay đổi có ảnh hưởng kỹ thuật quan trọng.
-5. Ghi log nếu user hoặc quy trình dự án yêu cầu.
-6. Chỉ chuyển phase tiếp theo khi phase hiện tại đã pass theo tiêu chí testing phù hợp.
+  6. Sau khi hoàn thành task, hãy tổng kết lại quá trình thực hiện, những khó khăn gặp phải và cách giải quyết vào file documentation của task đó (đọc kỹ quy tắc của documentation-skill để biết cách viết documentation đúng chuẩn).
 
-## Hoàn thành task
+  7. Sau khi hoàn thành task, hãy ghi lại log chi tiết quá trình thực hiện vào file logging của task đó (đọc kỹ quy tắc của logging-skill để biết cách viết log đúng chuẩn).
 
-- Không được bỏ qua phase đã cam kết trong plan nếu chưa cập nhật lại hướng đi với user.
-- Sau khi hoàn thành, tổng kết ngắn gọn trong phản hồi cuối: đã đổi gì, đã test gì, còn gì chưa làm nếu có.
-- Nếu task yêu cầu documentation, ghi lại khó khăn và cách giải quyết trong documentation của task.
-- Nếu task yêu cầu logging, ghi lại quá trình thực hiện theo `logging-skill`.
-- Chỉ push code khi user yêu cầu rõ ràng, và khi đó áp dụng `push-code-skill`.
+  8. Sau khi hoàn thành task hãy push dự án lên repository theo đúng push-code-skill đã đề ra, đảm bảo rằng code đã được review và pass tất cả các test trước khi push lên repository.

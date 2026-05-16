@@ -1,84 +1,86 @@
 ---
 name: readme-style
-description: README style guide cho Claude Code. Dùng khi tạo hoặc cập nhật README, banner, badges, quick navigation, architecture summary, Mermaid diagram, repo map, docs index hoặc accuracy notes.
+description: README style guide for this repository. Use when creating or updating README content, banners, badges, quick navigation, architecture summaries, Mermaid diagrams, repository maps, docs indexes, or accuracy notes.
 argument-hint: "README task"
 user-invocable: true
 ---
 
 # README Style Guide
 
-Tài liệu này mô tả phong cách README có thể tái sử dụng cho landing page, docs hub hoặc repo cùng hệ màu.
+Tai lieu nay mo ta phong cach cua README moi de co the tai su dung cho landing page, docs hub, hoac cac repo cung he mau.
 
-## 1. Mục tiêu thiết kế
+## 1. Muc tieu thiet ke
 
-README được định hướng theo phong cách "product landing page inside GitHub Markdown": vào là thấy banner, nhìn là hiểu sản phẩm, đọc nhanh là hiểu hệ thống chạy thế nào, kéo xuống là thấy pipeline, deployment và repo map.
+README duoc dinh huong theo phong cach "product landing page inside GitHub Markdown": vao la thay banner, nhin la hieu san pham, doc nhanh la hieu he thong chay the nao, va keo xuong la thay pipeline, deployment, va repo map. Muc tieu khong phai trinh bay tat ca chi tiet, ma la tao mot nhiep dieu ro rang giua marketing ky thuat va tai lieu van hanh.
 
-Mục tiêu không phải trình bày tất cả chi tiết, mà là tạo nhịp đọc rõ ràng giữa marketing kỹ thuật và tài liệu vận hành.
+## 2. Nguon cam hung thi giac
 
-## 2. Nguồn cảm hứng thị giác
+Bo cuc mo phong dang README dashboard dai, co cac dac diem sau:
 
-Bố cục mô phỏng README dashboard dài, có các đặc điểm sau:
+1. Hero manh o dau trang.
+2. Tieu de va tagline can giua.
+3. Badge line day, tao cam giac san pham da co he sinh thai ro.
+4. Link dieu huong nhanh ngay duoi hero.
+5. Nhieu bang thong tin va section ngan thay vi doan van qua dai.
+6. Co section flow va section feature matrix de nguoi doc quet nhanh.
 
-1. Hero mạnh ở đầu trang.
-2. Tiêu đề và tagline căn giữa.
-3. Badge line đầy, tạo cảm giác sản phẩm có hệ sinh thái rõ.
-4. Link điều hướng nhanh ngay dưới hero.
-5. Nhiều bảng thông tin và section ngắn thay vì đoạn văn dài.
-6. Có section flow và feature matrix để người đọc quét nhanh.
+## 3. Nguyen tac bo cuc
 
-## 3. Nguyên tắc bố cục
-
-README mới đi theo nhịp sau:
+README moi di theo nhip sau:
 
 1. Hero section.
-2. Tổng quan hệ thống.
-3. System flow bằng Mermaid.
-4. Quick start rất ngắn, ưu tiên lệnh chạy thật.
-5. Application pipelines để giải thích giá trị.
+2. Tong quan he thong.
+3. System flow bang Mermaid.
+4. Quick start rat ngan, uu tien lenh chay that.
+5. Application pipelines de giai thich gia tri.
 6. Deployment profiles.
 7. Repository map.
 8. Docs index.
-9. Accuracy notes để tránh overclaim.
+9. Accuracy notes de tranh overclaim.
 
-## 4. Ngôn ngữ trình bày
+Nhip nay giup README vua doc theo chieu doc, vua quet theo chieu ngang qua bang.
 
-README dùng giọng văn kỹ thuật bên ngoài:
+## 4. Ngon ngu trinh bay
 
-1. Câu ngắn, xác định, ít tính từ khoa trương.
-2. Dùng từ mang tính hệ thống và pipeline, không viết quá marketing.
-3. Nếu một tính năng là tùy chọn hoặc chưa hoàn tất, phải nói rõ.
-4. Mỗi section cần trả lời một câu hỏi cụ thể: hệ thống là gì, chạy như thế nào, thành phần nào quan trọng, vào code ở đâu.
+README dung giong van ky thuat ben ngoai:
 
-## 5. Ngôn ngữ hình khối
+1. Cau ngan, xac dinh, it tinh tu khoa truong.
+2. Dung tu mang tinh he thong va pipeline, khong viet qua marketing.
+3. Neu mot tinh nang la tuy chon hoac chua hoan tat, phai noi ro.
+4. Moi section can tra loi mot cau hoi cu the: he thong la gi, chay nhu the nao, thanh phan nao la quan trong, vao code o dau.
 
-Do GitHub Markdown không cho phép CSS tự do, phong cách được tạo bằng các kỹ thuật sau:
+## 5. Ngon ngu hinh khoi
+
+Do GitHub Markdown khong cho phep CSS tu do, phong cach duoc tao bang cac ky thuat sau:
 
 1. `div align="center"` cho hero.
-2. Ảnh banner full width để tạo cảm giác product-led.
-3. Badge style `for-the-badge` để tạo nhận diện dạng landing page.
-4. Bảng Markdown để giả lập card thông tin.
-5. Mermaid diagram để đóng khung kiến trúc mà không cần ảnh ngoài.
+2. Anh banner full width de tao cam giac product-led.
+3. Badge style `for-the-badge` de tao nhan dien dang landing page.
+4. Bang Markdown de gia lap cac card thong tin.
+5. Mermaid diagram de dong khung kien truc ma khong can anh ngoai.
 
-## 6. Quy tắc nội dung
+## 6. Quy tac noi dung
 
-README là trang điều hướng cấp cao, không phải tài liệu đầy đủ nhất. Vì vậy:
+README nay khong co muc tieu tro thanh tai lieu day du nhat. No la trang dieu huong cap cao. Vi vay:
 
-1. Giữ quick start ngắn và thực dụng.
-2. Chỉ nói những pipeline đã được đối chiếu với source.
-3. Đẩy chi tiết xuống docs chuyên đề.
-4. Thêm `Notes On Accuracy` để tránh README đọc hay hơn code.
+1. Chi giu quick start ngan va thuc dung.
+2. Chi noi nhung pipeline da duoc doi chieu voi source.
+3. Day chi tiet xuong docs chuyen de.
+4. Them `Notes On Accuracy` de chan viec README doc hay hon code.
 
-## 7. Bản sắc cần giữ nếu tái sử dụng
+## 7. Ban sac can giu neu tai su dung
 
-1. Hero rõ ràng và có hình nền nhận diện.
-2. Information density cao nhưng có nhóm section rõ.
-3. Đọc là thấy flow trước, chi tiết sau.
-4. Sự trung thực kỹ thuật được ưu tiên hơn slogan.
+Neu muon giu dung phong cach nay cho repo khac, can giu bon dac trung:
 
-## 8. Khi nào không nên dùng phong cách này
+1. Hero rat ro rang va co hinh nen nhan dien.
+2. Information density cao nhung co nhom section ro.
+3. Doc la thay flow truoc, chi tiet sau.
+4. Su trung thuc ky thuat duoc uu tien hon slogan.
 
-Không nên dùng phong cách này nếu repo chỉ là thư viện nhỏ, package đơn lẻ hoặc repo nội bộ không có nhu cầu giới thiệu kiến trúc. Với các repo đó, README ngắn và trực diện sẽ tốt hơn.
+## 8. Khi nao nen khong dung phong cach nay
 
-## 9. Tóm tắt một câu
+Khong nen dung phong cach nay neu repo chi la mot thu vien nho, mot package don le, hoac mot repo noi bo khong co nhu cau gioi thieu kien truc. Voi cac repo do, README ngan va truc dien se tot hon.
 
-Phong cách README này là sự kết hợp giữa landing page sản phẩm và operational architecture brief, được thiết kế để người đọc hiểu nhanh hệ thống làm gì, chạy thế nào và nên vào đâu trong repo nếu muốn đào sâu hơn.
+## 9. Tom tat mot cau
+
+Phong cach README nay la su ket hop giua landing page san pham va operational architecture brief, duoc thiet ke de nguoi doc hieu nhanh he thong dang lam gi, chay the nao, va nen vao dau trong repo neu muon dao sau hon.

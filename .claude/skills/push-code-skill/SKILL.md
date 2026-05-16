@@ -1,36 +1,28 @@
 ---
 name: push-code-skill
-description: Quy tắc bắt buộc khi Claude Code chuẩn bị commit, push, tạo PR, kiểm tra CI/CD, README, versioning hoặc cấu hình repository.
-argument-hint: "push or release task"
+description: 'Những quy tắt bắt buộc khi push dự án.'
+argument-hint: 'tuân thủ các quy tắc đã đề ra.'
 user-invocable: true
 ---
 
-# Push Code Skill
-
-Áp dụng khi user yêu cầu commit, push, tạo PR, release hoặc chuẩn bị repository để đưa code lên remote.
+# Những quy tắt bắt buộc khi push dự án:
 
 ## CI/CD
+- Mỗi task phải quét lại hết Ci/CD xem có gì cần cập nhật hay thêm không.
+- Phải đảm bảo có nhiều bài test nghiêm ngặt, chi tiết cho từng phần của dự án.
+- Phải đầy đủ chuẩn một production, tets nghiêm ngặt và có các bài tets gắt gao nhất.
 
-- Trước khi push, kiểm tra CI/CD hiện có để xem có cần cập nhật hoặc bổ sung không.
-- Đảm bảo test phù hợp đã được chạy và pass.
-- Với project production, ưu tiên test nghiêm ngặt cho các phần quan trọng.
-- Không bỏ qua hook, linter hoặc test bằng `--no-verify` trừ khi user yêu cầu rõ ràng.
+## Quy tắt push
+- Ghi commit rõ ràng có thời gian.
+- Có decription rõ ràng chi tiết.
 
-## Quy tắc commit và push
+## Setup
+- Setup gitignore, .env, .env.example nếu chưa có.
+- Tạo CI/CD khời đầu nếu chưa có.
 
-- Chỉ commit hoặc push khi user yêu cầu rõ ràng.
-- Commit message phải rõ ràng, mô tả đúng lý do thay đổi.
-- Nếu repository yêu cầu format riêng, tuân thủ format hiện có trong git log.
-- Không commit secret, `.env`, credential, token hoặc file nhạy cảm.
-- Trước khi push, kiểm tra trạng thái git và diff để đảm bảo chỉ đưa đúng file cần thiết.
+## Quy tắt viết readme.
+- Dùng skill readme-style để viết readme
+- Nếu chưa có ảnh banner thì ưu tiên chụp ảnh frontend không thì tự tạo.
 
-## Setup repository
-
-- Kiểm tra `.gitignore`, `.env.example`, CI/CD workflow nếu task liên quan đến setup hoặc release.
-- Nếu thiếu cấu hình khởi đầu quan trọng, đề xuất hoặc thêm theo yêu cầu user.
-- Quản lý version rõ ràng, chuyên nghiệp nếu project có versioning.
-
-## README
-
-- Khi tạo hoặc sửa README, dùng `readme-style`.
-- Nếu chưa có banner, ưu tiên ảnh frontend nếu project có UI; nếu không, có thể đề xuất banner đơn giản nhưng không tạo tài nguyên không cần thiết.
+## Quản lý version dự án rõ ràng.
+- Quản lý version rõ ràng chuyên nghiệp..
