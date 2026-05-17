@@ -1,55 +1,44 @@
 ---
 name: frontend-typography-skill
-description: Quy tắc typography cho UI web: font, scale chữ, hierarchy, line-height, readability, nhịp đọc và cách dùng chữ như yếu tố thiết kế.
+description: Tư duy typography frontend dùng chung: hierarchy rõ, chữ ngắn có ích, font scale tinh tế, metadata vừa đủ và mobile không quá to.
 argument-hint: "frontend typography task"
 user-invocable: true
 ---
 
 # Frontend Typography Skill
 
-## Tư duy typography
+## Tư duy chữ
 
-Chữ là phần lớn giao diện web. Typography tốt giúp UI có trật tự, cảm xúc và khả năng đọc cao mà không cần trang trí nhiều.
+Typography không chỉ là chọn font. Nó quyết định tốc độ đọc, cảm giác chuyên nghiệp và mức độ tin cậy của UI. Chữ phải giúp người dùng hiểu nhanh, không phải lấp đầy khoảng trống.
 
-## Quy tắc nền tảng
+## Voice & content
 
-- Chọn font phù hợp với tính cách sản phẩm.
-- Dùng ít font; thường 1 font chính là đủ.
-- Tạo scale rõ: display, title, heading, body, caption.
-- Không dùng quá nhiều size và weight trong một màn hình.
-- Body text phải dễ đọc trước khi cố làm đẹp.
+- Viết ngắn, rõ, có thông tin thật.
+- Bỏ câu mô tả chung chung nếu không giúp hiểu sản phẩm, dữ liệu hoặc hành động.
+- Không phóng đại nếu UI không có bằng chứng hỗ trợ.
+- Metadata chỉ giữ những gì giúp scan, so sánh hoặc ra quyết định.
+- Label/tag/category chỉ nên xuất hiện khi có vai trò thật trong hierarchy hoặc filter.
 
-## Phân cấp chữ
+## Type hierarchy
 
-- Display: dùng rất ít, cho hero hoặc thông điệp lớn.
-- Title: nói rõ màn hình/section là gì.
-- Heading: chia nhóm nội dung.
-- Body: truyền tải thông tin chính.
-- Caption/muted: metadata, helper text, mô tả phụ.
+- Heading định vị màn hình, không cần luôn cực lớn.
+- Lead text chỉ dùng khi nó giải thích điều heading chưa nói.
+- Card title phải đọc nhanh, không bị metadata hoặc badge lấn át.
+- Body/summary nên trả lời: đây là gì, vì sao quan trọng, người dùng có thể làm gì.
+- Microcopy của button, empty state và error state phải cụ thể.
 
-Không dùng heading chỉ vì muốn chữ to; heading phải phản ánh cấu trúc nội dung.
+## Font scale
 
-## Readability
-
-- Body text cần line-height thoáng.
-- Đoạn văn dài cần width vừa phải, không kéo ngang toàn màn hình lớn.
-- Text nhỏ không nên dùng màu quá nhạt.
-- Chữ in hoa toàn bộ chỉ dùng cho label ngắn hoặc metadata.
-- Tránh font quá mảnh nếu nền phức tạp hoặc contrast thấp.
-
-## Typography như phong cách
-
-- Sans-serif trung tính: sạch, hiện đại, sản phẩm SaaS.
-- Serif: editorial, cao cấp, giàu cảm xúc.
-- Mono: kỹ thuật, developer, dữ liệu, AI/security.
-- Rounded: thân thiện, mềm, consumer app.
-
-Phong cách chữ phải khớp màu, layout và brand.
+- Desktop có thể dùng heading lớn nếu tạo được nhịp thị giác.
+- Tablet cần giảm scale và line-height để tránh cảm giác bị ép layout.
+- Mobile cần font tinh tế hơn, không giữ hero desktop thu nhỏ bằng viewport unit quá lớn.
+- Tránh `vw` quá mạnh làm chữ mobile phình và thiếu cao cấp.
+- Letter spacing âm chỉ nên dùng cho heading lớn; text nhỏ cần readability trước.
 
 ## Checklist hoàn thành
 
-- Có scale chữ rõ.
-- Nội dung chính dễ đọc.
-- Heading dẫn mắt tốt.
-- Không có quá nhiều font/size/weight.
-- Typography khớp phong cách sản phẩm.
+- Người dùng đọc được nội dung chính trong vài giây.
+- Không có câu rỗng chỉ để làm đầy card/section.
+- Heading, metadata và action có thứ bậc rõ.
+- Mobile font không quá to hoặc thô.
+- Text dài/thiếu dữ liệu không phá layout.

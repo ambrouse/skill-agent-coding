@@ -1,68 +1,51 @@
 ---
 name: frontend-color-skill
-description: Quy tắc phối màu UI web: bảng màu, tương phản, vai trò màu, cảm xúc màu, accent color, dark mode và tránh phối màu gây rối.
+description: Tư duy màu frontend dùng chung: palette sạch, contrast rõ, background có chiều sâu, tránh neon/glow quá tay và màu bẩn.
 argument-hint: "frontend color task"
 user-invocable: true
 ---
 
 # Frontend Color Skill
 
-## Tư duy phối màu
+## Tư duy màu
 
-Màu trong UI có 3 nhiệm vụ: tạo cảm xúc, phân cấp thông tin và báo trạng thái. Không chọn màu chỉ vì đẹp riêng lẻ; màu phải hoạt động tốt trong toàn bộ hệ thống.
+Màu phải phục vụ nhận diện, hierarchy và readability. Không dùng màu vì trend hoặc vì hiệu ứng nhìn nổi ở screenshot nhưng mệt khi dùng thật.
 
-## Quy tắc bảng màu
+## Palette
 
-Một UI nên có:
+- Chọn base trước: neutral sáng, warm neutral, xanh đen, navy, graphite, v.v.
+- Accent chỉ nên có vai trò rõ: CTA, trạng thái, focus, điểm nhấn dữ liệu.
+- Light mode không được là bản “giảm sáng” của dark mode; cần palette riêng đủ sạch.
+- Dark mode không đồng nghĩa với neon; glow quá mạnh dễ làm UI rẻ và nhiễu.
+- Tránh nền xám xanh bẩn nếu không có chủ đích thương hiệu rõ.
 
-- 1 màu nền chính.
-- 1 màu chữ chính.
-- 1 màu primary cho hành động quan trọng.
-- 1 màu accent nếu cần tạo cá tính.
-- Màu semantic: success, warning, danger, info.
-- Màu border, muted text, surface phụ.
+## Background
 
-Không dùng quá nhiều màu cạnh tranh nhau trong cùng một màn hình.
+- Background nên tạo chiều sâu bằng layer mềm: linear gradient, subtle texture, grid nhẹ hoặc radial rất tiết chế.
+- Không lạm dụng đốm neon/radial glow nhiều màu vì dễ làm nền rối và quê.
+- Nếu có glow, dùng như ánh sáng môi trường, không như các đốm trang trí nổi bật.
+- Nền phải đẹp cả khi không có ảnh/banner hỗ trợ.
 
-## Vai trò màu
+## Card và surface
 
-- Primary: dùng cho CTA hoặc điểm nhấn quan trọng nhất.
-- Accent: dùng ít, để tạo cá tính hoặc highlight.
-- Neutral: dùng cho nền, text, border, card.
-- Semantic: chỉ dùng cho trạng thái đúng nghĩa.
+- Surface phải tách khỏi nền bằng contrast, border và shadow vừa đủ.
+- Shadow light mode nên sạch, không đen nặng.
+- Border cần hỗ trợ structure, không biến thành khung thô.
+- Ảnh/banner overlay phải hòa vào card nhưng không che mất ảnh.
+- Fallback visual nên cùng hệ màu với trang, không dùng màu random.
 
-Không dùng màu đỏ cho trang trí nếu sản phẩm cũng dùng đỏ cho lỗi.
+## Semantic color và CTA
 
-## Cảm xúc màu
-
-- Xanh dương: tin cậy, công nghệ, an toàn.
-- Xanh lá: tăng trưởng, thành công, tự nhiên.
-- Tím: sáng tạo, AI, cao cấp, bí ẩn.
-- Cam/vàng: năng lượng, cảnh báo, thân thiện.
-- Đỏ: nguy hiểm, lỗi, mạnh, khẩn cấp.
-- Đen/xám sâu: cao cấp, tập trung, kỹ thuật.
-
-Cảm xúc màu phải phù hợp sản phẩm, không chạy theo trend.
-
-## Tương phản
-
-- Text thường nên đạt contrast tối thiểu 4.5:1.
-- Text lớn và icon/state quan trọng nên đạt tối thiểu 3:1.
-- Không đặt chữ xám nhạt trên nền sáng nếu nội dung quan trọng.
-- Dark mode không chỉ là đảo màu; cần surface, border và shadow riêng.
-
-## Quy tắc phối màu thực dụng
-
-- Dùng nền trung tính, để màu mạnh cho action và trạng thái.
-- Nếu UI nhiều dữ liệu, giảm độ bão hòa màu.
-- Nếu UI marketing, có thể dùng màu giàu cảm xúc hơn nhưng vẫn phải đọc tốt.
-- Gradient chỉ dùng khi tạo nhận diện hoặc chiều sâu thật sự.
-- Một màn hình nên có ít điểm màu mạnh để mắt biết nhìn vào đâu.
+- Màu CTA chính phải nổi hơn link phụ.
+- Link/icon phụ nên tinh tế, nhỏ và đúng màu hệ thống.
+- Trạng thái hoạt động có thể dùng pulse/glow nhẹ, nhưng không được lệch palette.
+- Error/success/warning phải đủ phân biệt và đủ contrast.
 
 ## Checklist hoàn thành
 
-- Mỗi màu có vai trò rõ.
-- Primary action nổi bật nhất.
-- Semantic color không bị dùng sai nghĩa.
-- Contrast đủ đọc.
-- Không có quá nhiều màu gây nhiễu.
+- Light mode sạch, không bẩn hoặc bạc màu.
+- Dark mode sâu nhưng không neon quá tay.
+- Background không tranh spotlight với nội dung.
+- CTA nổi đúng mức, link phụ không quá thô.
+- Card/fallback/ảnh cùng một hệ màu.
+- Contrast text, icon, focus state đủ dùng.

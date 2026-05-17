@@ -1,56 +1,51 @@
 ---
 name: frontend-layout-skill
-description: Quy tắc bố cục web: grid, spacing, alignment, visual rhythm, responsive, grouping, density và xử lý layout với dữ liệu thật.
+description: Tư duy layout frontend dùng chung: hierarchy, grid, spacing, card structure, search/filter và responsive theo từng giai đoạn.
 argument-hint: "frontend layout task"
 user-invocable: true
 ---
 
 # Frontend Layout Skill
 
-## Tư duy bố cục
+## Tư duy layout
 
-Bố cục là cách dẫn mắt. Một layout tốt giúp người dùng biết phần nào quan trọng, phần nào liên quan và nên hành động ở đâu.
+Layout là cách dẫn mắt và giảm công sức đọc. Không chỉ là chia cột; nó quyết định thứ gì được hiểu trước, thứ gì là phụ và hành động nào dễ dùng nhất.
 
-## Quy tắc nền tảng
+## Hierarchy và spacing
 
-- Căn lề theo container rõ ràng.
-- Dùng grid hoặc flex có chủ đích.
-- Phần liên quan đặt gần nhau; phần khác nhóm tách xa nhau.
-- Khoảng trắng dùng để phân cấp, không phải phần thừa.
-- Không chia quá nhiều cột nếu nội dung không cần.
+- Màn hình cần một điểm bắt đầu rõ: hero, title, search, data summary hoặc action chính.
+- Spacing phải tạo nhóm thông tin, không chỉ làm rộng/thoáng.
+- Container chỉ dùng khi cần nhóm nội dung hoặc tạo priority; container thừa làm UI thô.
+- Grid nên theo dữ liệu thật: ít item, nhiều item, title dài, ảnh thiếu, state loading/error.
 
-## Spacing scale
+## Card layout
 
-Ưu tiên scale nhất quán:
+- Card cần form ổn định và dễ scan.
+- Media/banner nếu là phần chính thì đặt đủ lớn; nếu không quan trọng thì đừng ép ảnh vào.
+- Metadata nên nhỏ, gần nội dung liên quan và không tranh với title.
+- Action chính/phụ phải đặt có chủ đích; icon nhỏ cần căn giữa và hit area đủ.
+- Không nhồi tag/category nếu chưa có vai trò filter hoặc hierarchy thật.
 
-- 4px: tinh chỉnh nhỏ.
-- 8px: khoảng cách gần.
-- 12–16px: khoảng cách trong component.
-- 24–32px: khoảng cách giữa group/section.
-- 48px trở lên: khoảng cách giữa block lớn.
+## Search/filter layout
 
-Không dùng spacing ngẫu nhiên như 13px, 27px nếu project không có lý do.
+- Search/filter là công cụ thao tác, không phải hero thứ hai.
+- Search bar nên gọn, nhẹ, focus rõ, không dùng border/padding quá nặng.
+- Filter nên đọc được nhanh: nhóm cùng hàng ở desktop, chuyển thành cụm compact ở tablet/mobile.
+- Khi filter nhiều, cần hierarchy: search trước, filter phụ sau.
 
-## Visual rhythm
+## Responsive theo giai đoạn
 
-- Section quan trọng cần nhiều không gian hơn.
-- Danh sách cần nhịp đều để dễ quét.
-- Form cần group field theo ý nghĩa.
-- Dashboard cần summary trước, chi tiết sau.
-- Landing page cần nhịp: hook → value → proof → detail → CTA.
+Không chỉ stack mọi thứ hoặc dùng font `clamp()` lớn. Mỗi breakpoint cần thiết kế riêng:
 
-## Responsive
-
-- Mobile không phải bản thu nhỏ của desktop.
-- Trên mobile, ưu tiên nội dung và hành động chính.
-- Sidebar thường chuyển thành drawer hoặc section dưới.
-- Table rộng cần scroll có kiểm soát hoặc chuyển thành card/list.
-- Modal phải vừa viewport nhỏ.
+- Desktop: tận dụng grid rộng, sidebar/aside nếu thật sự có giá trị.
+- Tablet: giảm density, gom nhóm filter/action, giữ card đủ rộng.
+- Mobile: ưu tiên một cột rõ, heading nhỏ hơn, action dễ bấm, bỏ container phụ nếu gây nặng.
+- Small mobile: giảm font, spacing và card height có chủ đích; không giữ hero desktop thu nhỏ.
 
 ## Checklist hoàn thành
 
-- Mắt đi đúng thứ tự mong muốn.
-- Group thông tin rõ.
-- Spacing nhất quán.
-- Mobile/tablet/desktop không vỡ.
-- Layout chịu được text dài, empty state và dữ liệu nhiều.
+- Người dùng biết đọc từ đâu trước.
+- Container nào cũng có lý do tồn tại.
+- Card không vỡ khi thiếu ảnh hoặc text dài.
+- Search/filter gọn và dễ dùng.
+- Desktop/tablet/mobile có bố cục riêng, không chỉ scale.

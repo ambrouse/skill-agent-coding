@@ -1,38 +1,39 @@
 ---
 name: frontend-design-skill
-description: Bộ skill thiết kế frontend final. Dùng để định hướng UI/UX web theo tư duy rõ ràng, có phong cách, phối màu tốt, bố cục chắc, typography đẹp và interaction/accessibility đúng.
+description: Bộ skill tư duy thiết kế frontend dùng chung: rõ ràng, dữ liệu thật, màu sạch, card có chủ đích, responsive theo giai đoạn và accessibility.
 argument-hint: "frontend design task"
 user-invocable: true
 ---
 
 # Frontend Design Skill
 
-Bộ skill thiết kế frontend được tách theo từng mảng để agent tập trung đúng vấn đề, không nhồi toàn bộ quy tắc vào một file dài.
+Bộ skill này ghi lại tư duy thiết kế frontend có thể dùng lại cho nhiều dự án. Không xem đây là checklist cố định cho một website cụ thể; hãy áp dụng theo ngữ cảnh sản phẩm, dữ liệu thật và mục tiêu người dùng.
 
 ## Các skill thành phần
 
-- `frontend-design-core`: Tư duy thiết kế web cốt lõi, mục tiêu người dùng, phân cấp thị giác, state và tính nhất quán.
-- `frontend-style-skill`: Phong cách thị giác, mood, chất thương hiệu, mức độ tối giản, cao cấp, vui, kỹ thuật hoặc nghệ thuật.
-- `frontend-color-skill`: Phối màu, vai trò màu, cảm xúc màu, contrast, accent color, semantic color và dark mode.
-- `frontend-layout-skill`: Bố cục, grid, spacing, alignment, visual rhythm, responsive và xử lý dữ liệu thật.
-- `frontend-typography-skill`: Font, scale chữ, hierarchy, readability, nhịp đọc và chữ như yếu tố thiết kế.
-- `frontend-interaction-accessibility-skill`: State, feedback, keyboard, focus, form error, motion, semantic HTML và accessibility.
-
-## Cách dùng
-
-Khi làm task thiết kế frontend:
-
-1. Luôn bắt đầu từ `frontend-design-core`.
-2. Nếu task liên quan giao diện/mood/brand, dùng thêm `frontend-style-skill`.
-3. Nếu task liên quan màu, theme, dark mode, CTA hoặc trạng thái, dùng thêm `frontend-color-skill`.
-4. Nếu task liên quan layout, responsive, spacing hoặc dashboard/page structure, dùng thêm `frontend-layout-skill`.
-5. Nếu task liên quan chữ, landing page, content-heavy UI hoặc hierarchy, dùng thêm `frontend-typography-skill`.
-6. Nếu task liên quan form, button, modal, state, motion hoặc accessibility, dùng thêm `frontend-interaction-accessibility-skill`.
+- `frontend-design-core`: Tư duy cốt lõi: rõ ràng trước, đẹp sau; dữ liệu thật trước, demo sau; hành động chính phải dễ hiểu.
+- `frontend-style-skill`: Phong cách visual: chọn mood có chủ đích, giữ độ chuyên nghiệp, tránh trang trí gây nhiễu.
+- `frontend-color-skill`: Màu sắc: palette sạch, nền có chiều sâu nhưng không bẩn/neon quá tay, contrast đủ ở cả light/dark.
+- `frontend-layout-skill`: Layout: hierarchy, grid, spacing, responsive theo từng giai đoạn thay vì chỉ scale nhỏ.
+- `frontend-typography-skill`: Typography: chữ ngắn, có ích, scale tinh tế, metadata vừa đủ.
+- `frontend-interaction-accessibility-skill`: Interaction/accessibility: state rõ, focus không mất, icon link có accessible name, motion nhẹ.
 
 ## Nguyên tắc chung
 
 - Rõ ràng trước, đẹp sau.
 - Phân cấp trước, trang trí sau.
-- Dữ liệu thật trước, demo đẹp sau.
-- Nhất quán trước, sáng tạo sau.
-- Accessibility là yêu cầu gốc, không phải phần cộng thêm.
+- Dữ liệu thật trước, mockup đẹp sau.
+- Mỗi card/container phải có lý do tồn tại; nếu chỉ làm nặng UI thì bỏ.
+- Search/filter là công cụ thao tác, cần gọn, nhanh, không thô hoặc chiếm spotlight.
+- Responsive phải có thiết kế riêng cho desktop, tablet và mobile; không chỉ dùng `clamp()` hoặc stack mọi thứ.
+- Light mode cần sạch và cao cấp như dark mode, không dùng xám xanh bẩn hoặc glow neon tùy tiện.
+- Motion chỉ dùng để báo trạng thái hoặc tạo nhịp nhẹ, không dùng để khoe hiệu ứng.
+
+## Cách dùng
+
+1. Xác định người dùng cần hiểu gì và bấm gì trước.
+2. Kiểm tra dữ liệu thật có thể thiếu gì: ảnh, title, metadata, trạng thái, link.
+3. Thiết kế layout/card để vẫn đẹp khi dữ liệu thiếu.
+4. Chọn màu và background theo mood của sản phẩm, tránh hiệu ứng đang hot nhưng không hợp.
+5. Kiểm tra breakpoint bằng tư duy bố cục riêng, không chỉ co nhỏ desktop.
+6. Kiểm tra accessibility, focus, contrast và reduced motion trước khi coi là xong.

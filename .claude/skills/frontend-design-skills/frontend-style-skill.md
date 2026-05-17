@@ -1,6 +1,6 @@
 ---
 name: frontend-style-skill
-description: Quy tắc về phong cách thị giác cho UI web: mood, ngôn ngữ tạo hình, mức độ tối giản, độ sang, độ vui, độ công nghệ và tính nhất quán thương hiệu.
+description: Tư duy phong cách frontend dùng chung: mood có chủ đích, professional, sạch, tránh trang trí rỗng, glass/neon/sci-fi quá tay.
 argument-hint: "frontend style task"
 user-invocable: true
 ---
@@ -9,57 +9,42 @@ user-invocable: true
 
 ## Tư duy phong cách
 
-Phong cách không phải là trang trí. Phong cách là cảm giác nhất quán mà giao diện tạo ra: tin cậy, cao cấp, trẻ trung, tối giản, công nghệ, thân thiện hoặc sáng tạo.
+Style phải xuất phát từ sản phẩm: người dùng là ai, họ cần tin điều gì, họ cần đọc gì và hành động gì. Không áp một mood cố định cho mọi dự án.
 
-Trước khi chọn style, xác định:
+## Chọn mood
 
-- Sản phẩm dành cho ai?
-- Người dùng cần cảm giác gì: an tâm, nhanh, chuyên nghiệp, vui, cao cấp?
-- Nội dung là nghiêm túc hay giàu cảm xúc?
-- Brand hiện có đang đi theo hướng nào?
+- Trang hồ sơ/năng lực cần rõ, chắc và có bằng chứng.
+- Dashboard cần hierarchy dữ liệu, density và state rõ.
+- Landing page cần narrative, CTA và trust signal.
+- Tool/app nội bộ cần thao tác nhanh, ít trang trí, lỗi dễ nhận ra.
 
-## Hướng phong cách phổ biến
+## Visual language
 
-### Minimal / Clean
+- Chọn ít motif nhưng dùng nhất quán: grid, card, editorial spacing, glass, line art, imagery, v.v.
+- Hiệu ứng nền chỉ nên tạo bối cảnh, không chiếm spotlight.
+- Glass surface phải có lý do; glass quá phẳng hoặc quá mờ dễ cũ và khó đọc.
+- Radius, shadow, border cần cùng một mức tính cách: professional, playful, technical hoặc editorial.
+- Icon phải cùng style, cùng stroke/size và căn giữa tốt.
 
-- Ít màu, nhiều khoảng trắng, typography rõ.
-- Phù hợp dashboard, SaaS, công cụ nội bộ, sản phẩm cần độ tin cậy.
-- Tránh quá nhạt khiến UI thiếu điểm nhấn.
+## Những kiểu nên tránh
 
-### Premium / Luxury
+- Neon/glow quá tay khi sản phẩm không cần cảm giác cyber.
+- Badge/tag/label dày đặc chỉ để trông nhiều dữ liệu.
+- Container thừa làm layout nặng và thô.
+- Text trong visual như initials/category nếu không giúp hiểu nội dung.
+- Ảnh bị overlay quá mạnh làm mất nội dung chính.
 
-- Dùng màu sâu, tương phản tinh tế, typography có cá tính, spacing rộng.
-- Phù hợp landing page, portfolio, sản phẩm cao cấp.
-- Tránh lạm dụng gradient, shadow nặng hoặc chữ quá mảnh khó đọc.
+## Card style
 
-### Playful / Friendly
-
-- Màu sáng, bo góc mềm, minh họa, microcopy thân thiện.
-- Phù hợp education, creator tool, consumer app.
-- Tránh quá trẻ con nếu sản phẩm cần độ tin cậy.
-
-### Technical / Futuristic
-
-- Contrast mạnh, grid rõ, dark surface, accent color sắc, motion gọn.
-- Phù hợp AI, developer tool, security, data product.
-- Tránh làm UI rối như poster sci-fi.
-
-### Editorial / Artistic
-
-- Typography mạnh, bố cục có nhịp, ảnh lớn, khoảng trắng có chủ ý.
-- Phù hợp content, studio, creative brand.
-- Tránh phá usability chỉ để tạo bố cục lạ.
-
-## Quy tắc nhất quán
-
-- Một sản phẩm chỉ nên có một ngôn ngữ tạo hình chính.
-- Chọn 2-3 đặc điểm nhận diện rồi lặp lại: radius, border, shadow, icon style, tone màu, typography.
-- Không trộn quá nhiều style: glassmorphism, neumorphism, brutalism, gradient, 3D cùng lúc.
-- Style phải phục vụ nội dung và user flow.
+- Card cần form rõ: media/visual, title, metadata, summary/action theo thứ tự ưu tiên.
+- Nếu card dùng ảnh lớn, ảnh nên được phép crop đẹp nhưng không phá thông tin.
+- Nếu không có ảnh, fallback phải được thiết kế như một trạng thái chính thức, không phải chữa cháy.
+- Action trong card nên nhỏ gọn, đúng priority và không lệch màu.
 
 ## Checklist hoàn thành
 
-- Phong cách có tên gọi rõ.
-- Màu, typography, spacing, radius, shadow cùng một tinh thần.
-- Không có hiệu ứng chỉ để khoe kỹ thuật.
-- Giao diện vẫn dễ đọc và dễ thao tác.
+- Mood hợp với mục tiêu sản phẩm.
+- Style giúp đọc và thao tác, không chỉ làm đẹp.
+- Icon/card/container không thô hoặc lệch hệ.
+- Fallback state nhìn có chủ đích.
+- Light/dark giữ cùng tinh thần nhưng có xử lý riêng.
